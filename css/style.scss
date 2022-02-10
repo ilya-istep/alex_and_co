@@ -1,0 +1,95 @@
+// @import 'common/var.scss';
+// @import 'common/mixins.scss';
+// @import 'common/animation.scss';
+@import 'template/template_defoult.scss';
+
+
+
+// @import 'common/media.scss';
+.footer_content{
+	background-color: #1E1D24;
+	box-sizing: border-box;
+	max-width: 100%;
+	position: relative;
+	display: flex;
+
+	.footer_about{
+		color: #79787F;
+		width: 25%;
+		box-sizing: border-box;
+		padding: 20px 20px 10px 10px;
+		height: 100%;
+		h3{
+			color: white;
+		}
+
+	}
+
+
+}
+.footer_service{
+	box-sizing: border-box;
+	width: 25%;
+	padding: 20px 20px 10px 10px;
+	position: relative;
+
+	
+
+
+	h3{
+		color: white;
+		text-align: left;
+	}
+	li{
+		list-style: none;
+
+	}
+	a{
+		color: #79787F;
+		text-decoration: none;
+		padding: 0 5px 0 0;
+
+	}
+	a:hover{
+		color:  #fc5a0a;
+	}
+
+}
+.footer_products{
+	width: 25%;
+	box-sizing: border-box;
+	padding: 20px 20px 10px 10px;
+	
+	h3{
+		color:white;
+		text-align: left;
+
+
+	}
+	li{
+		list-style: none;
+		
+	}
+	a{
+		color: #79787F;
+		text-decoration: none;
+		padding: 0 5px 0 0;
+		
+
+	}
+	a:hover{
+		color:  #fc5a0a;
+	}
+}
+.footer_posts{
+	width: 25%;
+	box-sizing: border-box;
+	padding: 20px 20px 10px 10px;
+	h3{
+		color: white;
+	}
+	&_post_1{
+
+	}
+}
+

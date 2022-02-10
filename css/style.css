@@ -1,0 +1,56 @@
+.footer_content {
+  background-color: #1E1D24;
+  box-sizing: border-box;
+  max-width: 100%;
+  position: relative;
+  display: flex; }
+  .footer_content .footer_about {
+    color: #79787F;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 20px 20px 10px 10px;
+    height: 100%; }
+    .footer_content .footer_about h3 {
+      color: white; }
+
+.footer_service {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 20px 20px 10px 10px;
+  position: relative; }
+  .footer_service h3 {
+    color: white;
+    text-align: left; }
+  .footer_service li {
+    list-style: none; }
+  .footer_service a {
+    color: #79787F;
+    text-decoration: none;
+    padding: 0 5px 0 0; }
+  .footer_service a:hover {
+    color: #fc5a0a; }
+
+.footer_products {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 20px 20px 10px 10px; }
+  .footer_products h3 {
+    color: white;
+    text-align: left; }
+  .footer_products li {
+    list-style: none; }
+  .footer_products a {
+    color: #79787F;
+    text-decoration: none;
+    padding: 0 5px 0 0; }
+  .footer_products a:hover {
+    color: #fc5a0a; }
+
+.footer_posts {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 20px 20px 10px 10px; }
+  .footer_posts h3 {
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */
