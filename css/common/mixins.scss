@@ -1,0 +1,32 @@
+@mixin wrap(){
+    display: grid;
+    border: 1px solid #000;
+    grid-auto-rows: minmax(20px, auto);
+}
+
+/*Media*/
+@mixin desktop {
+    @media screen and (min-width: $desctop_min) and (max-width: $desctop_max) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (min-width: $laptop_min) and (max-width: $laptop_max) {
+        @content;
+    }
+}
+@mixin laptop-mini {
+    @media screen and (min-width: $laptop_mini_min) and (max-width: $laptop_mini_max) {
+        @content;
+    }
+}
+@mixin tablets {
+    @media screen and (min-width: $tablets_min) and (max-width: $tablets_max) {
+        @content;
+    }
+}
+@mixin phones {
+   @media screen and (max-width: $phones_max) {
+        @content;
+   }
+}
