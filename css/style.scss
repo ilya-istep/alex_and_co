@@ -9,3 +9,73 @@
 @import 'common/media.scss';
 
 
+.asid{
+   content: "";
+    width: 40%;
+    margin: 5px;
+    height: 100%;
+    display: block; 
+}
+.info_stroka{
+	display: block;
+	width: 100%;
+	min-height: 50px;
+	height: 45px;
+	left: 50px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.info_stroka input{
+	padding: 5px;
+}
+.ikonka{
+
+}
+h2:before{
+	content: "";
+    width: 90%;
+    height: 2px;
+   	background-color: #e3e9ee;
+    margin: 5px;
+    display: block;  
+}
+.categories li,a{
+	color: #fc5a0a;
+	margin-top: 5px;
+	list-style: none;
+	
+}
+.categories a:before{
+	content: "\2714";
+	margin-right: 7px;
+	background-position: center;
+	vertical-align: middle;
+}
+.recent_posts li,{
+	color: #fc5a0a;
+	margin-top: 5px;
+	list-style-type: none;
+	display: block;
+}
+.post-data {
+	color: #969ba2;
+	list-style: none;
+	line-height: 2;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	display: block;
+}
+.recent_posts a:before{
+	content: "";
+	margin-right: 7px;
+	background-position: center;
+	vertical-align: middle;
+	display: block;
+
+}
+.calendar_table{
+	margin-bottom: 0;
+	width: 100%;
+}
+
