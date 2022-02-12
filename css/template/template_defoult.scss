@@ -1,9 +1,19 @@
+.wrap{
+	margin: 0 auto;
+	width: 1180px;
+
+}
 .header{
  padding: 0 0 1px;
-
-	.header_menu{
+	.header-nav{
+		background-color: #FC5A0A;
+		width: 100%;
+	
+	 .header_menu{
 		background-color: #FC5A0A;
 		padding: 4px;
+		display:flex;
+		justify-content: space-between;
 		.menu{
 			display:flex;
 			align-content: center;
@@ -26,6 +36,10 @@
 		  	 text-decoration: none;
 		  	 display: block;
 		  	 padding: 10px;
+			}
+			i{
+			 margin-left:5px;
+			 transform:rotate(90deg)
 			}
 			> li:hover{
 			 background-color: #fff;
@@ -66,5 +80,18 @@
 		 	 left: 100%;
 			}
 		}
-	}
+	 }
+		.search{
+		 display:flex;
+		 align-items: center;
+
+		 i{
+		  color:#fff;
+		 }
+		
+		 i:hover{
+		  color:#000;
+		 }
+		} 
+	}	
 }			
