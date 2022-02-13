@@ -1,11 +1,12 @@
 @import 'common/var.scss';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
-@import 'common/mixins.scss';
-@import 'common/animation.scss';
+// @import 'common/mixins.scss';
+// @import 'common/animation.scss';
 @import 'template/template_defoult.scss';
+@import 'all.min.css';
+@import 'reset.css';
 
-
-
-@import 'common/media.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+// @import 'common/media.scss';
 
 
