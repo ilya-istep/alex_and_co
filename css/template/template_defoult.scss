@@ -1,94 +1,194 @@
-.article_block{
+html{
+	font-size: 16px;
+}
+.article_block {
 	display: flex;
 	margin-top: 50px;
-	.data_article{
+	border-bottom: 1px solid $color05;
+
+	.data_article {
+		width: 80px;
+		height: 80px;
+		background: $color05;
+		border-radius: 100%;
+		transition: all .3s ease;
+
 		.apr{
-			background: #f0f4f7;
-			padding: 20px 30px;
-			border-radius: 100%;
 			text-align: center;
-			p.number_date{
-				color: #fc5a0a;
-				font-size: 2rem; 
-				margin-bottom: 5px; 
+			margin-top: 15px;
+
+			p.number_date {
+				color: $color2;
+				font-size: 1.8rem;
+				font-family: 'Montserrat', sans-serif;
+				margin-bottom: 5px;
 			}
-			p.text_date{
+
+			p.text_date {
 				font-size: 0.8rem;
+				font-family: 'Montserrat', sans-serif;
 			}
 		}
-			.apr:hover{
-			background:#fc5a0a;
-			.number_date, 
-			.text_date{
-				color: #fff;
-			}
+	}
+
+	.data_article:hover {
+		background: $color2;
+
+		p.number_date,
+		p.text_date {
+			color: $color1;
 		}
 	}
 }
-.basic_informaition{
+
+.basic_informaition {
 	margin-left: 20px;
-	padding-bottom: 100px	;
-	border-bottom: 1px solid #ccc; 
-	// img{
-	// 	display: block;
-	// }
-	// img:defore{
-	// 	content: "";
-	// 	position: absolute;
-	// 	z-index: 1;
-	// 	left: 0;
-	// 	top: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	background-color: rgba(0, 0, 0, 0.5);
-	// 	opacity: 0;
-	// 	transition: opacity .3s ease;
-	// }
-	// img:defore:hover{
-	// 	opacity: 0.8;
-	// }
-	.author_name{
+	padding-bottom: 100px;
+
+	a.link_post {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		width: 660px;
+
+		img {
+			display: block;
+		}
+	}
+
+	a.link_post:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.5);
+		opacity: 0;
+		transition: opacity .3s ease;
+	}
+
+	a.link_post:hover:before {
+		opacity: 1;
+	}
+
+	p.author_name {
 		margin-top: 25px;
-		color: #ccc;
-		word-spacing: 3px;
-		.admin{
+		color: $color06;
+		word-spacing: 2px;
+		font-size: 0.8rem;
+		font-family: 'Roboto', sans-serif;
+
+		a.admin {
 			text-decoration: none;
-			color: #fc5a0a;
+			color: $color2;
+			transition: all .3s ease;
 		}
-		.admin:hover{
-			color: #ccc;
+
+		a.admin:hover {
+			color: $color06;
 		}
-		.electrical{
+
+		a.types_work {
 			text-decoration: none;
-			color: #000;
+			color: $color3;
+			transition: all .3s ease;
 		}
-		.electrical:hover{
-			color: #fc5a0a;
+		a.types_work:hover {
+			color: $color2;
 		}
 	}
-	.title_article{
+
+	h2.title_article {
 		margin-top: 15px;
-		a{
+		font-family: 'Montserrat', sans-serif;
+
+		a {
 			text-decoration: none;
-			color: #000;
-			font-size: 3rem;
+			color: $color3;
+			font-size: 2.5rem;
+			transition: all .3s ease;
+		}
+
+		a:hover {
+			color: $color2;
 		}
 	}
-	p.short_description{
+
+	p.short_description {
 		margin-top: 20px;
-		color: #ccc;
-		font-size: 1.4rem;
+		color: $color06;
+		font-size: 1rem;
+		font-family: 'Roboto', sans-serif;
 	}
-	.button_to_article{
+
+	.button_to_article {
 		margin-top: 50px;
-		a.link_to_article{
+		font-size: 0.8rem;
+		font-family: 'Montserrat', sans-serif;
+
+		a.link_to_article {
 			text-decoration: none;
-			background: #fc5a0a;
-			color: #fff;
-			padding: 20px 30px;
+			background: $color2;
+			color: $color1;
+			padding: 15px 30px;
+			border-radius: 2px;
+			transition: all .3s ease;
+			
+			i {
+				margin-left: 15px;
+			}
 		}
-		a.link_to_article:hover{
-			background: #d14c0b;
+
+		a.link_to_article:hover {
+			background: $color07;
 		}
+	}
+}
+
+.button_nav {
+	margin: 50px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	a.page_numbering_button {
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+		border: 1px solid $color4;
+		text-align: center;
+		color: $color06;
+		font-size: 0.9rem;
+		font-family: 'Roboto', sans-serif;
+		text-decoration: none;
+		line-height: 40px;
+		transition: all .3s ease;
+	}
+
+	a.page_numbering_button:hover {
+		background: $color2;
+		color: $color1;
+	}
+
+	a.page_numbering_next_button {
+		color: $color2;
+		text-decoration: none;
+		margin-left: 15px;
+		font-size: 0.8rem;
+		font-family: 'Montserrat', sans-serif;
+		transition: all .3s ease;
+
+		i {
+			padding-left: 4px;
+		}
+	}
+
+	a.page_numbering_next_button:hover {
+		color: $color06;
 	}
 }
