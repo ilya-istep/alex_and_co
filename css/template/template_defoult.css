@@ -1,0 +1,84 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  padding: 10px;
+}
+.header__top {
+  display: grid;
+  grid-template-columns: 300px repeat(3, 1fr) 260px;
+  grid-auto-rows: minmax(50%, auto);
+}
+.header__top-logo {
+  justify-self: start;
+}
+.header__top-operating-mode, .header__top-location, .header__top-phone, .header__top-btn {
+  justify-self: center;
+}
+.header__top-logo, .header__top-operating-mode, .header__top-location, .header__top-phone {
+  display: flex;
+  align-items: center;
+}
+.header__top-logo_text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  color: #79787f;
+  margin-left: 10px;
+}
+.header__top-operating-mode_clock_icon i, .header__top-operating-mode_icon i, .header__top-location_clock_icon i, .header__top-location_icon i, .header__top-phone_clock_icon i, .header__top-phone_icon i {
+  font-size: 2rem;
+  color: #fc5a0a;
+}
+.header__top-operating-mode_clock_text, .header__top-operating-mode_text, .header__top-location_clock_text, .header__top-location_text, .header__top-phone_clock_text, .header__top-phone_text {
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+.header__top-operating-mode_clock_text a, .header__top-operating-mode_text a, .header__top-location_clock_text a, .header__top-location_text a, .header__top-phone_clock_text a, .header__top-phone_text a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+  transition: all .3s ease;
+}
+.header__top-operating-mode_clock_text a:hover, .header__top-operating-mode_text a:hover, .header__top-location_clock_text a:hover, .header__top-location_text a:hover, .header__top-phone_clock_text a:hover, .header__top-phone_text a:hover {
+  color: #fc5a0a;
+}
+.header__top-btn {
+  overflow: hidden;
+  padding: 10px 0;
+  width: 85%;
+}
+.header__top-btn a {
+  display: block;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  background: #fc5a0a;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 1s ease;
+}
+.header__top-btn a i {
+  padding-right: 10px;
+}
+.header__top-btn a:hover {
+  background: #000;
+}
+
+/*# sourceMappingURL=template_defoult.css.map */
