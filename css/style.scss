@@ -1,13 +1,14 @@
+
 @import 'common/var.scss';
-// @import 'common/mixins.scss';
-// @import 'common/animation.scss';
+@import 'common/mixins.scss';
+@import 'common/animation.scss';
 @import 'template/template_defoult.scss';
 @import 'all.min.css';
 @import 'reset.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-// @import 'common/media.scss';
+
 
 
 .main__aside {
@@ -88,3 +89,9 @@ a {
     width: 100%;
 }
 }
+
+
+
+
+/*@import 'common/media.scss';*/
+
