@@ -10,6 +10,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
 
+.main {
+    background: #f6f6f6;
+
+    &__blog {
+
+        &-title {
+            padding: 40px 0;
+
+            p {
+                font-family: "Montserrat", Sans-serif;
+                font-weight: 400;
+                padding-left: 40px;
+            }
+        }
+
+        &-link {
+            padding: 40px 0;
+
+            p {
+                font-family: "Roboto", Sans-serif;
+                font-size: 0.8rem;
+                color: #79787F;
+            }
+
+            a {
+                font-family: "Roboto", Sans-serif;
+                text-decoration: none;
+                color: #79787F;
+                font-size: 0.8rem;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+}
+}
 
 .main__aside {
     grid-column: 2;
@@ -94,4 +131,3 @@ a {
 
 
 /*@import 'common/media.scss';*/
-
