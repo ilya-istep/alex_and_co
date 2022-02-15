@@ -1,9 +1,10 @@
 @import 'common/var.scss';
 @import 'common/mixins.scss';
 @import 'common/animation.scss';
+@import 'reset.css';
 @import 'template/template_defoult.scss';
 @import 'all.min.css';
-@import 'reset.css';
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
@@ -316,7 +317,76 @@ a {
     width: 100%;
 }
 }
+.calendar_wrap{
+    width: 300px;/*временно поставил ширину*/
+}
+.widget_calendar table {
+    width: 100%;
+    position: relative;
+}
+.widget_calendar caption {
+    color: #ffffff;
+    background-color: #fc5a0a;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+}
+.widget_calendar th {
+    padding: 12px 0;
+    font-weight: inherit;
+    position: relative;
+    color: #1e1d24;
+}
+.widget_calendar th:after {
+    content: "";
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #e3e9ee;
+    z-index: -1;
+    background-color: #f0f4f7;
+}
+.widget_calendar thead {
+    text-align: center;
+    border-top: none;
+        color: #79787f;
+}
+.widget_calendar tbody,{
+    color: #79787f;
+}
+.widget_calendar tbody td {
+    position: relative;
+    text-align: center;
+    line-height: 44px;
+}
+td, th {
+    padding: 0;
+}
+.widget_calendar tbody td:after {
+    content: "";
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 1px solid #e3e9ee;
+}
 
+
+a {
+    text-decoration: none;
+    color: #fc5a0a;
+}
+.today {
+    color: #fc5a0a;
+}
 
 
 

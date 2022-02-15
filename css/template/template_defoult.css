@@ -1,118 +1,76 @@
-<<<<<<< HEAD
-html {
-  font-size: 16px;
-}
+/*
+Error: Undefined variable: "$color2".
+        on line 18 of D:\академия шаг\шаблоны кода\headerblogaside\css\template\template_defoult.scss
 
-body {
-  margin: 0;
-  padding: 0;
-}
+13: 
+14:     &__nav {
+15:         display: grid;
+16:         grid-template-columns: 3fr 1fr;
+17:         grid-auto-rows: minmax(50%, auto);
+18:         background: $color2;
+19: 
+20:     }
+21: 
+22:     &__top {
+23:         display: grid;
 
-.wrap {
-  width: 1180px;
-  margin: 0 auto;
-}
-
-.header {
-  display: grid;
-  padding: 10px;
-}
-.header__top {
-  display: grid;
-  grid-template-columns: 300px repeat(3, 1fr) 260px;
-  grid-auto-rows: minmax(50%, auto);
-}
-.header__top-logo {
-  justify-self: start;
-}
-.header__top-operating-mode, .header__top-location, .header__top-phone, .header__top-btn {
-  justify-self: center;
-}
-.header__top-logo, .header__top-operating-mode, .header__top-location, .header__top-phone {
-  display: flex;
-  align-items: center;
-}
-.header__top-logo_text p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.8rem;
-  color: #79787f;
-  margin-left: 10px;
-}
-.header__top-operating-mode_clock_icon i, .header__top-operating-mode_icon i, .header__top-location_clock_icon i, .header__top-location_icon i, .header__top-phone_clock_icon i, .header__top-phone_icon i {
-  font-size: 2rem;
-  color: #fc5a0a;
-}
-.header__top-operating-mode_clock_text, .header__top-operating-mode_text, .header__top-location_clock_text, .header__top-location_text, .header__top-phone_clock_text, .header__top-phone_text {
-  margin-left: 10px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
-  line-height: 20px;
-}
-.header__top-operating-mode_clock_text a, .header__top-operating-mode_text a, .header__top-location_clock_text a, .header__top-location_text a, .header__top-phone_clock_text a, .header__top-phone_text a {
-  text-decoration: none;
-  color: #000;
-  font-size: 1.1rem;
-  transition: all .3s ease;
-}
-.header__top-operating-mode_clock_text a:hover, .header__top-operating-mode_text a:hover, .header__top-location_clock_text a:hover, .header__top-location_text a:hover, .header__top-phone_clock_text a:hover, .header__top-phone_text a:hover {
-  color: #fc5a0a;
-}
-.header__top-btn {
-  overflow: hidden;
-  padding: 10px 0;
-  width: 85%;
-}
-.header__top-btn a {
-  display: block;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  text-decoration: none;
-  background: #fc5a0a;
-  border-radius: 2px;
-  color: #fff;
-  font-size: 0.8rem;
-  font-family: 'Montserrat', sans-serif;
-  transition: all 1s ease;
-}
-.header__top-btn a i {
-  padding-right: 10px;
-}
-.header__top-btn a:hover {
-  background: #000;
-}
-=======
-body {
-  margin: 0;
-  padding: 0; }
-
-.main {
-  display: grid;
-  padding: 10px; }
-  .main__blog {
-    display: grid;
-    grid-template-columns: 20% 20%;
-    grid-auto-rows: minmax(50%, auto);
-    grid-column-gap: 60%;
-    background: #f6f6f6; }
-    .main__blog-title {
-      padding: 40px 0; }
-      .main__blog-title p {
-        font-family: "Montserrat", Sans-serif;
-        font-weight: 400; }
-    .main__blog-link {
-      padding: 40px 0; }
-      .main__blog-link p {
-        font-family: "Roboto", Sans-serif;
-        font-size: 0.8rem;
-        color: #79787F; }
-      .main__blog-link a {
-        font-family: "Roboto", Sans-serif;
-        text-decoration: none;
-        color: #79787F;
-        font-size: 0.8rem; }
-      .main__blog-link a:hover {
-        text-decoration: underline; }
->>>>>>> feature-main_content_top_section
-
-/*# sourceMappingURL=template_defoult.css.map */
+Backtrace:
+D:\академия шаг\шаблоны кода\headerblogaside\css\template\template_defoult.scss:18
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$color2\".\A         on line 18 of D:\академия шаг\шаблоны кода\headerblogaside\css\template\template_defoult.scss\A \A 13: \A 14:     &__nav {\A 15:         display: grid;\A 16:         grid-template-columns: 3fr 1fr;\A 17:         grid-auto-rows: minmax(50%, auto);\A 18:         background: $color2;\A 19: \A 20:     }\A 21: \A 22:     &__top {\A 23:         display: grid;"; }

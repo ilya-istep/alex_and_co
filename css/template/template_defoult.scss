@@ -6,15 +6,13 @@ body {
     margin: 0;
     padding: 0;
 }
-
-.wrap {
+.wrap{
     width: 1180px;
     margin: 0 auto;
 }
 
 .header {
     display: grid;
-    padding: 10px;
 
     &__nav {
         display: grid;
@@ -128,7 +126,7 @@ body {
         background-color: #FC5A0A;
         padding: 4px;
         display: flex;
-        justify-content: space-between;
+        column-gap: 48em;
 
         .menu {
             display: flex;
@@ -258,30 +256,346 @@ body {
     }
 }
 
-.footer {
-    display: grid;
-    padding: 10px;
-    color: $color1;
-    background: $color3;
-    justify-content: center;
-    text-align: center;
+.footer_contacts{
+    box-sizing: border-box;
+    background-color: #1E1D24;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 15% 20px 15%;
+    position:relative;
+    
+    
+    
+    .fone{
+        box-sizing: border-box;
+        position:relative;
+        display: flex;
+        .fone_icon{
+            box-sizing:border-box;
+            min-width: 70px;
+            height: 70px;
+            background-color:#FC5A0A;
+            position:relative;
+            border-radius:50%;
+            margin-top: 5%;
+            display: block;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.2);
+            }
 
-    &__info {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: minmax(50%, auto);
-        color: $color1;
-        background: $color3;
-        grid-gap: 1em;
-
-        &-about {
-            margin-left: 100px;
+            i{position:absolute;
+                left: 25%;
+                top:25%;
+                font-size: 32px;
+                color: white;
+            }
         }
+
+        .i-fone{
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+            h2{
+                color: white;
+                font-size: 20px;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .fone_info a:hover{
+            color:#fc5a0a;
+
+        }
+
+    }
+    .adress{box-sizing: border-box;
+        position:relative;
+        display: flex;
+        .fone_icon2{
+            box-sizing:border-box;
+            min-width: 70px;
+            height: 70px;
+            background-color:#FC5A0A;
+            position:relative;
+            border-radius:50%;
+            margin-top: 5%;
+            display: block;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.2);
+            }
+
+            i{position:absolute;
+                left: 30%;
+                top:30%;
+                font-size: 32px;
+                color: white;
+            }
+        }
+        .i-fone2{display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+            h2{
+                color: white;
+                font-size: 20px;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+        }
+
+
+    }
+    .email{
+        box-sizing:border-box;
+        position:relative;
+        display: flex;
+        .fone_icon3{box-sizing:border-box;
+            min-width: 70px;
+            height: 70px;
+            background-color:#FC5A0A;
+            position:relative;
+            border-radius:50%;
+            margin-top: 5%;
+            display: block;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.2);
+            }
+            i{
+                position:absolute;
+                left: 30%;
+                top:30%;
+                font-size: 32px;
+                color: white;
+            
+            }
+
+        }
+        .i-fone3{
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+            h2{
+                color: white;
+                font-size: 20px;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+        }
+        
+
+        .fone_info3 a:hover{
+            color: #fc5a0a;
+        }
+
     }
 
-    &__bottom {
-        color: $color1;
-        background: $color3;
-        padding-top: 20px;
+
+
+
+    
+
+}
+.box{
+    width: 100%;
+    height: 1px;
+    background-color: #79787F;
+    
+}
+.footer_content{
+    background-color: #1E1D24;
+    box-sizing: border-box;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    padding-left:15%;
+    padding-right: 15%;
+
+    .footer_about{
+        color: #79787F;
+        width: 25%;
+        box-sizing: border-box;
+        padding: 20px 20px 10px 10px;
+        height: 100%;
+        h3{
+            color: white;
+        }
+
+    }
+
+
+}
+.footer_service{
+    box-sizing: border-box;
+    width: 25%;
+    padding: 20px 20px 10px 10px;
+    position: relative;
+
+    
+
+
+    h3{
+        color: white;
+        text-align: left;
+    }
+    ul{
+        display: block;
+        float: right;
+        width: 100%;
+    }
+    
+    i{
+        color: #fc5a0a;
+        padding-right:10px;
+    }
+    i:hover{
+        color:  white;
+    }
+    li{
+        list-style: none;
+        padding-top: 10px;
+        
+
+    }
+    a{
+        color: #79787F;
+        text-decoration: none;
+        padding: 0 5px 0 0;
+
+    }
+    a:hover{
+        color:  #fc5a0a;
+    }
+
+}
+.footer_products{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 20px 20px 10px 10px;
+    
+    h3{
+        color:white;
+        text-align: left;
+
+
+    }
+    ul{display: block;
+        float: right;
+        width: 100%;
+
+    }
+    i{
+        color: #fc5a0a;
+        padding-right:10px;
+    }
+    i:hover{
+        color:  #fc5a0a;
+    }
+
+    li{
+        list-style: none;
+        padding-top:10px;
+        
+    }
+    a{
+        color: #79787F;
+        text-decoration: none;
+        padding: 0 5px 0 0;
+        
+
+    }
+    a:hover{
+        color:  #fc5a0a;
     }
 }
+.footer_posts{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    .h3{
+        box-sizing:border-box;
+        padding-top: 20px;
+    }
+    h3{
+        color: white;
+    }
+    .footer_wrap{
+        display: flex;
+        box-sizing:border-box;
+        position:relative;
+        padding-top:15px;
+        img{
+            display: block;
+            padding:10px 10px 10px 10px;
+            width: 60%;
+
+            
+            
+        }
+    }
+    .footer_links{
+        box-sizing:border-box;
+        position:relative;
+        width: 100%;
+    }
+    .footer_link{
+        a{
+            font-size: 14px;
+            text-decoration: none;
+            color:#79787F;
+        }
+    }
+    .footer_link2{
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+    }
+    .info{
+        color:#79787F ;
+    }
+}
+
+
+
+.footer_end{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:0 15% 0 15%;
+    position:relative;
+    box-sizing:border-box;
+    background-color:black;
+    a{
+        color: #FC5A0A;
+    }
+    p{
+        color:#79787F;
+    }
+    .footer_icons{
+        box-sizing:border-box;
+        padding-top: 10px;
+        a{font-size: 25px;
+            color:white;
+            padding:10px 10px 5px 5px;
+        }
+        a:hover{color: #FC5A0A;
+        
+
+        }
+
+    }
+}
+
