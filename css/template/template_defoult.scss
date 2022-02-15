@@ -246,20 +246,8 @@ body {
 
     &__content {
         display: grid;
-        grid-template-columns: 70% 30%;
-        grid-auto-rows: minmax(10px, auto);
-        width: $width_base;
         justify-items: center;
-        margin: 0 auto;
-        /*временно убрать*/
 
-        .blok1,
-        .blok2,
-        .blok3,
-        .blok4 {
-            display: grid;
-            grid-column: 1;
-        }
     }
 }
 
