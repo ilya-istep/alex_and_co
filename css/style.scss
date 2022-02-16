@@ -263,7 +263,7 @@
     padding: 5px;
 }
 
-.ikonka {}
+//.ikonka {}
 
 h2:before {
     content: "";
@@ -289,7 +289,7 @@ a {
     vertical-align: middle;
 }
 
-.recent_posts li,
+.recent_posts li
     {
     color: #fc5a0a;
     margin-top: 5px;
@@ -312,8 +312,7 @@ a {
     margin-right: 7px;
     background-position: center;
     vertical-align: middle;
-    display: block;
-
+   // display: block;
 }
 
 .calendar_table {
@@ -360,7 +359,7 @@ a {
     border-top: none;
         color: #79787f;
 }
-.widget_calendar tbody,{
+.widget_calendar tbody{
     color: #79787f;
 }
 .widget_calendar tbody td {
